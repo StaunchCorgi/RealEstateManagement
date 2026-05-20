@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "b9ebc87f-63a3-4dff-ad26-f13be7cbfdfd",
+		"name": "RealEstateManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Properties",
+			"item": [
+				{
+					"name": "CreateProperty",
+					"id": "ba14831f-9a6d-4cef-8248-b85574c0168a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzIiwiZW1haWwiOiJib2thbmdAZ21haWwuY29tIiwiRnVsbE5hbWUiOiJCb2thbmcgTW9yZWxlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWdlbnQiLCJleHAiOjE3NzkyNzk3MjIsImlzcyI6IlJlYWxFc3RhdGVBUEkiLCJhdWQiOiJSZWFsRXN0YXRlVXNlcnMifQ.Yaujkev1atRGwaGdWsAB8Py9y64Y0S_helqts3TW_dQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"Title\": \"2 bedroom apartment\",\n  \"Description\": \"2 Bedroom Apartment\",\n  \"Price\": 8500,\n  \"Location\":\"West Rand\",\n  \"PropertyType\":\"Apartment\",\n  \"Status\":\"Available\"\n \n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5180/api/properties/create"
+					},
+					"response": []
+				},
+				{
+					"name": "GetProperty",
+					"id": "c2d06682-1d7e-43ef-a588-8ca4932c4e66",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5180/api/properties/1"
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllProperties",
+					"id": "3f4194d8-8e38-43d8-b076-ed13c198c69f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5180/api/properties"
+					},
+					"response": []
+				}
+			],
+			"id": "e4994ec3-c31a-477e-a82f-f39084d3a618"
+		},
+		{
+			"name": "Units",
+			"item": [
+				{
+					"name": "CreateUnit",
+					"id": "9ebbea2e-c3bd-4d47-96dc-780ad62c01a9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5180/api/unit"
+					},
+					"response": []
+				},
+				{
+					"name": "GetUnit",
+					"id": "2e406ea3-71c6-474f-9e13-8c7b29060a47",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5180/api/unit/1"
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllUnits",
+					"id": "b7497748-c45f-4efc-9af9-a40f48e6a258",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5180/api/unit"
+					},
+					"response": []
+				}
+			],
+			"id": "871f482a-47a8-4458-b963-a4e18c7c665b"
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "CreateUser",
+					"id": "363168be-70c4-49a6-b1d3-9cf89464d7a7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"FullName\": \"Anele Mdoda\",\n  \"Email\": \"anele@gmail.com\",\n  \"Phone\": \"0679537768\",\n  \"Password\":\"Leadership@2026\"\n  \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5180/api/user/register"
+					},
+					"response": []
+				},
+				{
+					"name": "GetUser",
+					"id": "a7807c4c-226e-4945-ab05-9ecfcf2d6347",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5180/api/user/3"
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllUsers",
+					"id": "d62a3e69-de3b-4276-99d6-e1425f624acf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5180/api/user"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"id": "9b9ee513-83ff-4143-bd8f-15a2755a7cb4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"bokang@gmail.com\",\n    \"password\": \"Leadership@2026\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5180/api/user/login"
+					},
+					"response": []
+				},
+				{
+					"name": "request-agent-access",
+					"id": "195ed633-842a-4b7f-8446-2f19cfe3b316",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzIiwiZW1haWwiOiJib2thbmdAZ21haWwuY29tIiwiRnVsbE5hbWUiOiJCb2thbmcgTW9yZWxlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWdlbnQiLCJleHAiOjE3NzkyNzcxMDIsImlzcyI6IlJlYWxFc3RhdGVBUEkiLCJhdWQiOiJSZWFsRXN0YXRlVXNlcnMifQ.lD5CO1zIpiMpcNFtrNXsqF1UgiJKShFJ-5JbZWbOQKs"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:5180/api/user/request-agent-access"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"id": "a740cc8d-55f1-4560-8a99-014da964db82",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"anele@gmail.com\",\n    \"password\":\"Leadership@2026\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5180/api/user/login"
+					},
+					"response": []
+				}
+			],
+			"id": "2fd5b717-71c6-4a23-9ae9-042568c099fe"
+		},
+		{
+			"name": "Inquiries",
+			"item": [
+				{
+					"name": "CreateInquiries",
+					"id": "32153c30-0032-4103-9200-79c6f3848004",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0IiwiZW1haWwiOiJhbmVsZUBnbWFpbC5jb20iLCJGdWxsTmFtZSI6IkFuZWxlIE1kb2RhIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQnV5ZXIiLCJleHAiOjE3NzkyODA1OTAsImlzcyI6IlJlYWxFc3RhdGVBUEkiLCJhdWQiOiJSZWFsRXN0YXRlVXNlcnMifQ.406k3zfEsHnW3kdLfkeTOqKYywY8L4VvZBa5mfpA1NA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"UserId\": 3,\n  \"PropertyId\": 2,\n  \"Message\": \"Interested, when can i view\"\n}\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5180/api/inquire"
+					},
+					"response": []
+				},
+				{
+					"name": "GetAgentInquiries",
+					"id": "509f5258-66cc-4829-a9e4-60e34a8e5af1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzIiwiZW1haWwiOiJib2thbmdAZ21haWwuY29tIiwiRnVsbE5hbWUiOiJCb2thbmcgTW9yZWxlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWdlbnQiLCJleHAiOjE3NzkyOTkwNDEsImlzcyI6IlJlYWxFc3RhdGVBUEkiLCJhdWQiOiJSZWFsRXN0YXRlVXNlcnMifQ.AioKqHYi1aqdDtmExG3I7ZC64nM14RkwAKd9PjcR_hs"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5180/api/inquire/agent-inquiries"
+					},
+					"response": []
+				}
+			],
+			"id": "b0a9ece1-5e1e-44d5-a539-007967f370e6"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "ed1aa824-2001-4551-9b39-b0967ded1811"
+		},
+		{
+			"name": "Viewings",
+			"item": [
+				{
+					"name": "CreateViewing",
+					"id": "7d490c21-4052-47ce-bfd6-ff2ba368ec1d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"UserId\": 3,\n  \"PropertyId\": 1,\n  \"ScheduledDate\": \"2026-05-15T14:30:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5180/api/viewing"
+					},
+					"response": []
+				}
+			],
+			"id": "dda4c433-0041-42b6-ad6d-7f19b8d37483"
+		},
+		{
+			"name": "AgentRequests",
+			"item": [
+				{
+					"name": "GetAgentAccessRequests",
+					"id": "12dd458a-fd1a-46ff-b5a5-b00d22e77c96",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5180/api/requests/agent-access-requests"
+					},
+					"response": []
+				},
+				{
+					"name": "ApproveRequest",
+					"id": "3e649cce-b285-4a50-93c7-836c6377f650",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://localhost:5180/api/requests/approve-agent-access-request/3"
+					},
+					"response": []
+				}
+			],
+			"id": "ab702215-f97c-44c8-b9ec-84407f0cd699"
+		},
+		{
+			"name": "New Request",
+			"id": "a6264c98-c990-42a0-a168-dd05e3390d4f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
