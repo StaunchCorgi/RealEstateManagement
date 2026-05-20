@@ -25,7 +25,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"Title\": \"2 bedroom apartment\",\n  \"Description\": \"2 Bedroom Apartment\",\n  \"Price\": 8500,\n  \"Location\":\"West Rand\",\n  \"PropertyType\":\"Apartment\",\n  \"Status\":\"Available\"\n \n}\n\n",
+							"raw": "{\n  \"Title\": \"\",\n  \"Description\": \"\",\n  \"Price\": 0,\n  \"Location\":\"\",\n  \"PropertyType\":\"\",\n  \"Status\":\"\"\n \n}\n\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -202,7 +202,7 @@
 						"auth": {
 							"type": "bearer",
 							"bearer": {
-								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzIiwiZW1haWwiOiJib2thbmdAZ21haWwuY29tIiwiRnVsbE5hbWUiOiJCb2thbmcgTW9yZWxlIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWdlbnQiLCJleHAiOjE3NzkyNzcxMDIsImlzcyI6IlJlYWxFc3RhdGVBUEkiLCJhdWQiOiJSZWFsRXN0YXRlVXNlcnMifQ.lD5CO1zIpiMpcNFtrNXsqF1UgiJKShFJ-5JbZWbOQKs"
+								"token": ""
 							}
 						},
 						"method": "POST",
@@ -359,7 +359,7 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
-						"url": "http://localhost:5180/api/requests/approve-agent-access-request/3"
+						"url": "http://localhost:5180/api/requests/approve-agent-access-request/1"
 					},
 					"response": []
 				}
