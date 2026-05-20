@@ -133,7 +133,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"FullName\": \"Anele Mdoda\",\n  \"Email\": \"anele@gmail.com\",\n  \"Phone\": \"0679537768\",\n  \"Password\":\"Leadership@2026\"\n  \n}",
+							"raw": "{\n  \"FullName\": \"\",\n  \"Email\": \"\",\n  \"Phone\": \"\",\n  \"Password\":\"\"\n  \n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -181,7 +181,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"email\":\"bokang@gmail.com\",\n    \"password\": \"Leadership@2026\"\n}\n\n",
+							"raw": "{\n    \"email\":\"\",\n    \"password\": \"\"\n}\n\n",
 							"options": {
 								"raw": {
 									"language": "json"
