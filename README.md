@@ -21,4 +21,4 @@
 
 ## Postman Collection
 Import:
-RealEstateAPI.postman_collection.json
+RealEstateManagement_Postman.json
