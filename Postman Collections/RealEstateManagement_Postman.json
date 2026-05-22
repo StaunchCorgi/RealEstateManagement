@@ -321,6 +321,30 @@
 						"url": "http://localhost:5180/api/viewing"
 					},
 					"response": []
+				},
+				{
+					"name": "GetAgentViewings",
+					"id": "81b7c4b9-283f-4855-b9c1-a985d8eca421",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "4f7dbf1c-24b4-4f92-b11b-dfe015eaedc6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "dda4c433-0041-42b6-ad6d-7f19b8d37483"
